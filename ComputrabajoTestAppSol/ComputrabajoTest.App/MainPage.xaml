@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputrabajoTest.App.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <!--MAUI ERROR CON EL RENDER DE LAS IMAGENES-->
+            <Image
+                x:Name="imgDotnet"
+                Source="dotnet_bot"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hola, Computrabajo!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Pruebas - Nicolas Salinas"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Autenticarse"
+                FontAttributes="Bold"
+                SemanticProperties.Hint="Haga clic para autenticarse"
+                Clicked="OnBiometricClicked"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Repositorio"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://github.com/" />
+                </Label.GestureRecognizers>
+
+            </Label>
+
+            <Label
+                Text="Mi linkedin"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.linkedin.com/in/jnsalinasgo/" />
+                </Label.GestureRecognizers>
+
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

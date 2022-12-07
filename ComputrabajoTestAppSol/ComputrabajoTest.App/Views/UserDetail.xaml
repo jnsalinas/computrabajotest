@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputrabajoTest.App.Views.UserDetail"
+             Title="Detalle de usuario">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="3,3,3,3"
+            VerticalOptions="StartAndExpand">
+
+
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Compañía"
+                VerticalOptions="Start"  />
+
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.company.name}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView Margin="0,0,0,15" HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Nombre"
+                VerticalOptions="Start"  />
+
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.name}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView Margin="0,0,0,15" HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Grid ColumnSpacing="20" Margin="0,0,0,15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+
+                    <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Username"
+                VerticalOptions="Start"  />
+
+                    <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.username}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+                    <BoxView HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="0">
+                    <Label
+                        HorizontalOptions="FillAndExpand"
+                        Text="Fecha de creación"
+                        VerticalOptions="Start"  />
+
+                    <Editor
+                        IsEnabled="False"
+                        Text="{Binding selectedUser.createdOn}"
+                        VerticalOptions="Start"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+                </StackLayout>
+            </Grid>
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Status"
+                VerticalOptions="Start"  />
+
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.status.name}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView Margin="0,0,0,15" HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Rol"
+                VerticalOptions="Start"  />
+
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.role.name}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView Margin="0,0,0,15" HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Portal"
+                VerticalOptions="Start"  />
+
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.portal.name}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView Margin="0,0,0,15" HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Label
+                HorizontalOptions="FillAndExpand"
+                Text="Email"
+                VerticalOptions="Start"  />
+            <Editor
+                IsEnabled="False"
+                Text="{Binding selectedUser.email}"
+                VerticalOptions="Start"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+
+            <Grid ColumnSpacing="20" Margin="0,0,0,15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical" Grid.Column="0" Grid.Row="0">
+                    <Label Text="Teléfono"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+                    <Editor
+                        IsEnabled="False"
+                        Text="{Binding selectedUser.telephone}"
+                        VerticalOptions="Start"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Fax"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+
+                    <Editor
+                    IsEnabled="False"
+                    Text="{Binding selectedUser.fax}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" />
+                    <BoxView HeightRequest="1.5" HorizontalOptions="Fill" BackgroundColor="#e0e0e0" VerticalOptions="End"/>
+                </StackLayout>
+            </Grid>
+
+            <Button
+                Text="Buscar email en Goolge"
+                x:Name="btnSearchEmployee"
+                Clicked="btnSearchEmployee_Clicked"
+                SemanticProperties.Description="Buscar email"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
