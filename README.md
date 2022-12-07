@@ -1,4 +1,4 @@
-# Pruebas Computrabajo - Nicolas Salinas Galindo
+# Pruebas Computrabajo - Nicolas Salinas
 
 A continuación se datalla la solución de las pruebas en estas encontraran los siguientes temas:
 
@@ -16,11 +16,13 @@ A continuación se datalla la solución de las pruebas en estas encontraran los 
 
 Se adiciona evidencias de funcionamiento de la aplicación movil, apuntando al Servicio local el cual se conecta a una base de datos SQL Server, en este git se evidencia la funcionalidad de listar usuarios, ir al detalle y buscar en google el email del correo:
 
-Preview 
+Video completo con el funcionamiento de la APP [Aqui!](https://drive.google.com/file/d/1sgzinw72k0npgyuUvxCEUAiPmyZ9GqSv/view?usp=sharing)
+
+Preview App:
 
 ![image](./Documentacion/Markdown/Evidencia.gif)
 
-[Video completo con el funcionamiento de la APP](https://drive.google.com/file/d/1sgzinw72k0npgyuUvxCEUAiPmyZ9GqSv/view?usp=sharing)
+
 
 ## ARQUITECTURA
 
@@ -30,7 +32,7 @@ Se desarrolla una arquitectura cliente servidor, donde el proyecto de la aplicac
 
 ## Diagramar de base de Datos
   
-  Según el análisis de lo solicitado se realizó el siguiente modelo de datos para soportar la información solicitada para el sistema.
+  Según el análisis de los datos enviados en la prueba construi el siguiente modelo de datos para soportar la información del sistema.
 
 ![image](./Documentacion/Markdown/DiagramaER.png)
 
