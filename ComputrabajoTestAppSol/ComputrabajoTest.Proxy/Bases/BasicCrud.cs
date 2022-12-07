@@ -3,7 +3,6 @@ using ComputrabajoTest.Proxy.Constants;
 using System.Net;
 using RestSharp.Portable.HttpClient;
 using RestSharp.Portable;
-using ComputrabajoTest.Helper;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using ComputrabajoTest.Entities.Base;
