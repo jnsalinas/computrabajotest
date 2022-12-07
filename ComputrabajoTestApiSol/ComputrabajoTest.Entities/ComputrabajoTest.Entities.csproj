@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BE\" />
+    <None Remove="BE\Base\" />
+    <None Remove="MP\" />
+    <None Remove="VM\" />
+    <None Remove="MP\Base\" />
+    <None Remove="MP\Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BE\" />
+    <Folder Include="BE\Base\" />
+    <Folder Include="MP\" />
+    <Folder Include="VM\" />
+    <Folder Include="MP\Base\" />
+    <Folder Include="MP\Enum\" />
+  </ItemGroup>
+</Project>

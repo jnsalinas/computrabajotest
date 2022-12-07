@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BO\" />
+    <None Remove="Interfaces\" />
+    <None Remove="LinqKit" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BO\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputrabajoTest.Entities\ComputrabajoTest.Entities.csproj" />
+    <ProjectReference Include="..\ComputrabajoTest.Data\ComputrabajoTest.Data.csproj" />
+    <ProjectReference Include="..\ComputrabajoTest.DataAccess\ComputrabajoTest.DataAccess.csproj" />
+    <ProjectReference Include="..\ComputrabajoTest.DataAccess\ComputrabajoTest.DataAccess.csproj" />
+    <ProjectReference Include="..\ComputrabajoTest.Utilities\ComputrabajoTest.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LinqKit" Version="1.2.3" />
+  </ItemGroup>
+</Project>

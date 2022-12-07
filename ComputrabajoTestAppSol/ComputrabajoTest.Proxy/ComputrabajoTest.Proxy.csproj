@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Bases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Bases\" />
+    <None Remove="FubarCoder.RestSharp.Portable" />
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FubarCoder.RestSharp.Portable" Version="3.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputrabajoTest.Helper\ComputrabajoTest.Helper.csproj" />
+    <ProjectReference Include="..\ComputrabajoTest.Entities\ComputrabajoTest.Entities.csproj" />
+  </ItemGroup>
+</Project>
